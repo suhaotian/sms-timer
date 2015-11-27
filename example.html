@@ -16,7 +16,7 @@
 			function handler() {
 				$btn.removeEventListener('click', handler)
 				$tip.textContent = '已发送'
-				new sms(1, {
+				new sms(0.1, {
 					update: function (timer) {
 						$txt.textContent = timer+ ' '
 					},
