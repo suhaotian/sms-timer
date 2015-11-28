@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Example</title>
+</head>
+<body>
+	<button id="send-sms"><span class='timer'></span><span class="tip">发送短信</span></button>
+
+	<script src="http://cdn.bootcss.com/seajs/3.0.1/sea.js"></script>
+	<!-- // <script src="../dist/index.js"></script> -->
+	<script>
+	seajs.config({
+		base: 'http://localhost:3000/dist/',
+		alias: {
+			'sms': 'index.js'
+		}
+	})
+	seajs.use('../example/init.js')
+	seajs.use('../example/init.js')
+	</script>
+</body>
+</html>
